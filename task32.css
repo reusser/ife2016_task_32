@@ -1,0 +1,169 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.hide {
+	display: none;
+}
+#sidebar {
+	position: absolute;
+	padding: 20px;
+}
+#sidebar fieldset {
+	width: 300px;
+	padding: 10px;
+	margin: 20px auto;
+}
+#type label,
+#input-type label,
+#config label,
+#component-option label,
+#length-rule label,
+#textarea-control label {
+	margin-left: 20px;
+}
+#config label,
+#textarea-control label {
+    display: block;
+}
+#config input[type="text"] {
+	padding: 2px 5px;
+	margin-left: 15px;
+}
+#component-option input {
+	width: 200px;
+    padding: 5px 2px;
+}
+#option-box {
+	width: 250px;
+	margin: 10px;
+}
+#option-box span {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	margin-top: 10px;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	background-color: #3498db;
+	cursor: pointer;
+}
+#length-rule input,
+#textarea-control input {
+	width: 40px;
+    margin: auto 10px;
+}
+
+#add-btn {
+	display: inline-block;
+	width: 120px;
+	height: 30px;
+	padding: 3px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	border: 1px solid #3498db;
+	border-radius: 4px;
+	background-color: #3498db;
+	cursor: pointer;
+}
+#main {
+	position: absolute;
+	left: 400px;
+	top: 44px;
+	width: 800px;
+	padding: 20px;
+	text-align: center;
+	border: 1px solid #000;
+}
+#main p {
+    font-size: 22px;
+    color: #237ae4;
+}
+#main>label {
+	display: block;
+}
+#main label {
+	font-size: 20px;
+	padding: 10px;
+	margin: 10px;
+}
+#main label input[type="text"],
+#main label input[type="tel"],
+#main label input[type="email"],
+#main label input[type="password"] {
+	width: 400px;
+	height: 40px;
+	margin-left: 30px;
+	padding: 2px 10px;
+	font-size: 18px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+}
+#main label input[type="number"] {
+	width: 40px;
+	height: 40px;
+	margin-left: 30px;
+	padding: 2px 10px;
+	font-size: 18px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+}
+#main label input[type="text"].error,
+#main label input[type="tel"].error,
+#main label input[type="email"].error,
+#main label input[type="password"].error {
+	border-color: #f00;
+}
+#main label input[type="text"].success,
+#main label input[type="tel"].success,
+#main label input[type="email"].success,
+#main label input[type="password"].success {
+	border-color: #0f0;
+}
+form div span {
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px;
+	margin: 10px;
+}
+select {
+	width: 200px;
+	height: 40px;
+	padding: 2px 10px;
+	font-size: 18px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	outline: none;
+}
+#main .info {
+	margin-top: 5px;
+	font-size: 20px;
+	color: #ccc;
+}
+#main p.error {
+	color: #f00;
+}
+#main p.success {
+	color: #0f0;
+}
+#main input[type="submit"] {
+	width: 120px;
+	height: 40px;
+	padding: 3px;
+	margin: 10px auto;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+	border: 1px solid #3498db;
+	border-radius: 4px;
+	background-color: #3498db;
+	cursor: pointer;
+}
+#main .textAreaBox span {
+	display: block;
+}
