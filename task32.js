@@ -1,9 +1,9 @@
 const components = []; //所有创建的表单组件容器
 
-let [typeArea, configArea, inputTypeArea, optionArea, lenRuleArea, textareaArea] = document.getElementsByTagName('fieldset');
-let [inputRadio, radioRadio, checkboxRadio, selectRadio, textareaRadio] = typeArea.getElementsByTagName('input');
-let [componentName, need, needless] = configArea.getElementsByTagName('input');
-let [optionInput] = optionArea.getElementsByTagName('input');
+let [typeArea, configArea, inputTypeArea, optionArea, lenRuleArea, textareaArea] = Array.from(document.getElementsByTagName('fieldset'));
+let [inputRadio, radioRadio, checkboxRadio, selectRadio, textareaRadio] = Array.from(typeArea.getElementsByTagName('input'));
+let [componentName, need, needless] = Array.from(configArea.getElementsByTagName('input'));
+let [optionInput] = Array.from(optionArea.getElementsByTagName('input'));
 let form          = document.getElementById('form');
 let submitBtn     = document.getElementById('submit-btn');
 let optionBox     = document.getElementById('option-box');
@@ -117,13 +117,13 @@ let configurator = {
 	},
 	//获取文本框字符长度
 	getlengthRule() {
-        let [minNum] = document.getElementsByName('minNum');
-        let [maxNum] = document.getElementsByName('maxNum');
+        let [minNum] = Array.from(document.getElementsByName('minNum'));
+        let [maxNum] = Array.from(document.getElementsByName('maxNum'));
         return [minNum.value, maxNum.value];
 	},
 	//获取多行文本框行列数
 	gettextAreaControl() {
-        let [row, col] = textareaArea.getElementsByTagName('input');
+        let [row, col] = Array.from(textareaArea.getElementsByTagName('input'));
         return [row.value, col.value];
 	},
 	//获取所有配置信息
